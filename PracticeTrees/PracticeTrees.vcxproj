@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{80708887-50de-4942-b25e-7af406ed566f}</ProjectGuid>
-    <RootNamespace>SymmetricTree</RootNamespace>
+    <ProjectGuid>{a6560be7-6aeb-442d-ba25-db5ff3621ff7}</ProjectGuid>
+    <RootNamespace>PracticeTrees</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -116,10 +116,12 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>..\..\MediumCollection\LeetCodeUtil;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>..\..\MediumCollection\x64\Debug\LeetCodeUtil.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -139,7 +141,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BinaryTreeLevelOrderTraversal.cpp" />
+    <ClCompile Include="ConvertSortedArraytoBinarySearchTree.cpp" />
+    <ClCompile Include="InvertBinaryTree.cpp" />
+    <ClCompile Include="PracticeTrees.cpp" />
     <ClCompile Include="SymmetricTree.cpp" />
+    <ClCompile Include="ValidateBinarySearchTree.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PracticeTrees.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
