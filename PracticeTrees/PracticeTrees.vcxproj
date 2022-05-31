@@ -142,13 +142,17 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="BinaryTreeLevelOrderTraversal.cpp" />
+    <ClCompile Include="BinaryTreeMaximumPathSum.cpp" />
     <ClCompile Include="ConvertSortedArraytoBinarySearchTree.cpp" />
+    <ClCompile Include="Graphs.cpp" />
     <ClCompile Include="InvertBinaryTree.cpp" />
     <ClCompile Include="PracticeTrees.cpp" />
     <ClCompile Include="SymmetricTree.cpp" />
+    <ClCompile Include="TestSubtreeOfAnotherTree.cpp" />
     <ClCompile Include="ValidateBinarySearchTree.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Graphs.h" />
     <ClInclude Include="PracticeTrees.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

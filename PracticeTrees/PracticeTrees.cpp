@@ -2,11 +2,13 @@
 //
 #include "LeetCodeUtil.h"
 #include "PracticeTrees.h"
+#include "Graphs.h"
 
 #include <iostream>
 
 using namespace std;
 using namespace Trees;
+using namespace Graphs;
 
 int main()
 {
@@ -21,4 +23,10 @@ int main()
     TestConvertSortedArraytoBinarySearchTree();
 
     BinaryTreeLevelOrderTraversal();
+
+    TestSubtreeOfAnotherTree();
+
+    TestBinaryTreeMaximumPathSum();
+
+    TestGraphs();
 }
